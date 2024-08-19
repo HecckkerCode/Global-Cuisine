@@ -13,7 +13,7 @@
 
   <!-- Google Fonts -->
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -83,8 +83,6 @@
 </section>
 <!-- End Hero -->
 
-
-
   <!-- ======= User Information Form ======= -->
   <section id="subscribe" class="subscribe">
     <div class="container center-form" data-aos="fade-up">
@@ -94,7 +92,7 @@
           <p>Enter your information to subscribe.</p>
         </div>
 
-        <form id="userInfoForm">
+        <form id="userInfoForm" onsubmit="return showSubscriptionAlert()">
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" class="form-control" required>
@@ -163,6 +161,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Custom JS for Subscription Alert -->
+  <script>
+    function showSubscriptionAlert() {
+      alert("You have successfully subscribed to Global Cuisine's WebPage!");
+      return false; // Prevent form submission for demo purposes
+    }
+  </script>
 
 </body>
 
