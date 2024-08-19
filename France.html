@@ -44,11 +44,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="Mainpage.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Subscribe</a></li>
           <li><a class="nav-link scrollto" href="French.html#regional">Regional Dishes</a></li>
           <li><a class="nav-link scrollto" href="French.html#beverage">Beverages</a></li>
           <li><a class="nav-link scrollto" href="French.html#dessert">Dessert</a></li>
           <li><a class="nav-link scrollto " href="French.html#festival">Festival</a></li>
-          <li class="dropdown"><span>countries</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#country"><span>Country</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
                 <li><a href="British cuisine.html">Britain</a></li>
                 <li><a href="canada.html">Canada</a></li>
@@ -251,30 +252,27 @@ function countdownTo(date, elementId) {
     <script>
       // Function to share on Facebook
       function shareOnFacebook() {
-        // Replace with your website URL and content
-        var url = 'https://www.your-website-url.com';
-        var text = 'Check out this amazing Malay culture website!';
-        var shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '&quote=' + encodeURIComponent(text);
-        window.open(shareUrl, '_blank');
-      }
+    var url = 'https://www.facebook.com/foodandwine';
+    var text = 'Check out these amazing French cuisine recipes and cooking tips on this website!';
+    var shareUrl = 'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(url) + '&quote=' + encodeURIComponent(text);
+    window.open(shareUrl, '_blank');
+}
   
       // Function to share on Instagram
       function shareOnInstagram() {
-        // Replace with your website URL and content
         var url = 'https://www.your-website-url.com';
-        var text = 'Check out this amazing Malay culture website!';
-        var shareUrl = 'https://www.instagram.com/';
+        var text = 'Check out this amazing French Cuisine website!';
+        var shareUrl = 'https://www.instagram.com/foodandwine/?hl=en';
         // You can't pre-fill Instagram captions due to API limitations, so just open the Instagram URL.
         window.open(shareUrl, '_blank');
       }
   
       // Function to share on Twitter
       function shareOnTwitter() {
-        // Replace with your website URL and content
-        var url = 'https://www.your-website-url.com';
-        var text = 'Check out this amazing Malay culture website!';
-        var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text);
-        window.open(shareUrl, '_blank');
+    var url = 'https://www.x.com/foodandwine';
+    var text = 'Check out exciting foods around here!';
+    var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text) + '&via=foodandwine&hashtags=food,travel';
+     window.open(shareUrl, '_blank');
       }
     </script>
   
@@ -597,6 +595,22 @@ function countdownTo(date, elementId) {
   </section>
 
   <!-- End Contact Section -->
+
+<!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+  <div class="container">
+    <div class="text-center">
+      <h3>Subscribe To Our Website</h3>
+      <p>
+        Never miss any of our latest food news and delicious food recipes~
+      </p>
+      <p>
+        By Subscribing, we will send you daily healthy food recipes for you to try out yourself!
+      </p>
+      <a class="cta-btn" href="#" onclick="redirect(); return false;">Subscribe Now!</a>
+    </div>
+  </div>
+</section><!-- End Cta Section -->
 
    <!-- ======= Footer ======= -->
 <footer id="footer">
