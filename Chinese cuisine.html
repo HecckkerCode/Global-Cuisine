@@ -47,10 +47,11 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="Mainpage.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Subscribe</a></li>
           <li><a class="nav-link scrollto" href="Chinese cuisine.html#regional">Traditional and Modern <br> Chinese Cuisine</a></li>
           <li><a class="nav-link scrollto" href="Chinese cuisine.html#dessert">Chinese Desserts</a></li>
           <li><a class="nav-link scrollto " href="Chinese cuisine.html#extra">Festival with <br> Special Food</a></li>
-          <li class="dropdown"><span>Countries</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#country"><span>Country</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="British cuisine.html">Britain</a></li>
               <li><a href="canada.html">Canada</a></li>
@@ -182,23 +183,23 @@
   <script>
     // Function to share on Facebook
     function shareOnFacebook() {
-    var url = 'https://www.facebook.com/foodnetworkcanada/'; 
-    var text = 'Check out this amazing canadian food recipes and cooking tips website!';
+    var url = 'https://www.facebook.com/Chinahighlights'; 
+    var text = 'Check out these amazing Chinese food recipes and cooking tips on this website!';
     var shareUrl = 'https://www.facebook.com/dialog/share?app_id=YOUR_APP_ID&display=popup&href=' + encodeURIComponent(url) + '&quote=' + encodeURIComponent(text);
     window.open(shareUrl, '_blank');
     }
 
     function shareOnInstagram() {
-var url = 'https://www.instagram.com/canadianfoodies/?hl=en';
+var url = 'https://www.instagram.com/chinahighlights/';
 window.open(url, '_blank');
 }
 
     // Function to share on Twitter
     function shareOnTwitter() {
-      var url = 'https://x.com/foodincanada';
-      var text = 'Check out this exciting foods around canada!';
-      var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text);
-      window.open(shareUrl, '_blank');
+    var url = 'https://x.com/Chinahighlights';
+    var text = 'Check out exciting foods around here!';
+    var shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text) + '&via=Chinahighlights&hashtags=food,travel';
+     window.open(shareUrl, '_blank');
     }
   </script>
 
@@ -448,6 +449,24 @@ window.open(url, '_blank');
 
         </div>
       </section><!-- Festival with its Special Food Section -->
+
+
+<!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+  <div class="container">
+    <div class="text-center">
+      <h3>Subscribe To Our Website</h3>
+      <p>
+        Never miss any of our latest food news and delicious food recipes~
+      </p>
+      <p>
+        By Subscribing, we will send you daily healthy food recipes for you to try out yourself!
+      </p>
+      <a class="cta-btn" href="#" onclick="redirect(); return false;">Subscribe Now!</a>
+    </div>
+  </div>
+</section><!-- End Cta Section -->
+
 
  <!-- ======= Footer ======= -->
 <footer id="footer">
